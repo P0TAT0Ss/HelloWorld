@@ -36,6 +36,7 @@
   
 # Collection *based_of_Iterator*
   ***List***  
+    **sort by Collections.sort(list);**  
     **ArrayList**  
     *sequential*  
     *fast_iterator,_slow_add_remove_replace*  
@@ -97,6 +98,8 @@
   result = prime*result+((element == null)? 0:element.hashCode());  
     return result;  
   **}**  
-  
-    
+  # creat random number
+   **class Random**  
+   *Random random = new Random();*  
+   *random.nextInt(bound);*  
   
