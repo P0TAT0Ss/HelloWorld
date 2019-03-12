@@ -1,2 +1,2 @@
 # myNotes
-Some study notes or projects to backup.
+**Backup of some study notes or projects**
