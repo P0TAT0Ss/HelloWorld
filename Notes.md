@@ -1,137 +1,158 @@
-# Exception
-***RuntimeException***  *try_catch-by_needs*  
+# Exception(Throwable)
+***RuntimeException***  
+*try-catch by needs*  
 
-**ArithmeticException**  
-**NullPointerException**  
-**IndexOutOfBoundsException**  
+**ArithmeticException    
+NullPointerException  
+IndexOutOfBoundsException**  
 
 ***CheckedException***  
+*Wont build unless handle(try-catch)*  
 
-**IOException**  *Wont_build_unless_handle(try_catch)*  
-**EOFException**  
-**FileNotFoundException**  
+**IOException  
+EOFException  
+FileNotFoundException**  
 
-# Error
+# Error(Throwable)
 ***VirtualMachineError***  
 
-**StackOverflowError**  
-**OutOfMemoryError**  
+**StackOverflowError  
+OutOfMemoryError**  
 
 ***AWTError***  
 
 # Class_String
-  **final**  
-  
+**final**  
+
 # Class_StringBuilder();
-  **dynamic_object**  
-  **boots_performance**  
-  
-  **API:_**  
-  **.append();**  
-  **.insert();**  
-  **.replace();**  
-  **.indexOf(String);**  
-  **.lastIndexOf(String);**  
-  **.delete(int start,int end)**  
-  **.deleteCharAt(int index);**  
-  **.revarse();**  
-  
+**dynamic object  
+higher performance**  
+
 # Class_SimpleDateFormat(format)
-  **API:_**  
-  **.format(date);** *//make_date_to_String_date*  
-  **.parse(String date);** *//make_String_date_to_date*  
+**API:    
+.format(date);** *//make date to String_date*  
+**.parse(String date);**  *//make String date to date*  
   
-# Class_Date(date)  *not_recommend_to_handle_date*
-  **set_date**  
-  
-# Class_Calendar()  *//more_recommend_to handle_date*
-**static_methods:_Calendar_date=_Calendar.methodName（）**  
+# Class Date(date)  *not recommend to handle date*
+**set date**  
+
+# Class Calendar()  *//more recommend to handle date*
+**static methods: Calendar date= Calendar.methodName（）**  
 **date.getTime()**  
   
-# Class_Math
-**static_methods**  
+# Class Math
+**static methods**  
 
-**API:_**  
-**Math.round(double);**  
-**Math.floor(double);**  
-**Math.ceil(double);**  
-**Math.random();** *//get_0~1_random_double_float*  
+**API:  
+Math.round(double);  
+Math.floor(double);  
+Math.ceil(double);  
+Math.random();**  *//get 0~1 random double float*  
   
-# Collection *based_of_Iterator*
+# Collection *based of Iterator*
 ***List***  
-**sort by Collections.sort(list);**  
+*sort by Collections.sort(list);*  
 
 **ArrayList**  
  
-*sequential*  
-*fast_iterator,_slow_add_remove_replace*  
+**sequential  
+fast iterator, slow add remove replace**  
  
 **LinkList**  
 
-*sequential*  
-*fast_add_remove_replace,_slow_iterator*  
+**sequential  
+fast add remove replace, slow iterator**  
 
 ***Set***  
 
 **HashSet**  
 
-*not_sequential,can_only_iterator_by_Iterator_and_foreach(simple iterator)*  
-*element_can't_repeat*  
-*API:*  
-*.add();*  
-*.remove();*  
-*.replace();*  
-*.clear();*          
+**not sequential,can only iterator by Iterator and foreach(simple iterator)  
+element can't repeat  
   
 # Map
-  ***HashMap***  
+
+****HashMap***  
+
+**key--velue  
+not sequential  
+iterator_by_keySet(); : return key, by entrySet(); : return key--velue  
+Key can't repeat,Value can repeat**  
   
-  *key--velue*  
-  *not_sequential*  
-  *iterator_by_keySet();_:_return_key,_by_entrySet();_:_return_key--velue*  
-  *Key_can't_repeat,Value_can_repeat*  
+@Override
+**equals(Object obj) {**  
+*determine two objects equals*  
+**if(this == obj) {  
+return true;  
+}**  
+*determine obj are null or not*  
+**if(obj == null) {  
+return false;  
+}**  
+*determine two class equals*   
+**if(obj instenceof Class) {  
+return true;  
+}**  
+*type conversion*  
+**Class variableName = ()obj;**  
+*determine two value equals*  
+**if(variableName == null) {  
+(this.element == null) {  
+return true;  
+} else {  
+return false;  
+} else {  
+if(this.element.equals(variableName.element)) {  
+return true;  
+} else  
+return false;  
+}  
+}  
+}**  
   
-# @Override
-  **equals(Object obj) {**  
-  ***determine two objects equals***    
-  if(this == obj) {  
-     return true;  
-  }    
-  ***determine obj are null or not***   
-  if(obj == null) {  
-     return false;  
-  }  
-   ***determine two class equals***   
-   if(obj instenceof Class) {  
-      return true;  
-   }  
-   ***type conversion***  
-   Class variableName = ()obj;  
-   ***determine two value equals***  
-   if(variableName == null) {  
-      if(this.element == null) {  
-         return true;  
-      } else {  
-         return false;  
-      } else {  
-         if(this.element.equals(variableName.element)) {  
-            return true;  
-         } else  
-            return false;  
-      }  
-   }  
-  **}**  
+***if override equals(), must @override hashCode()***  
   
-***if_override_equals(),_must_override_hashCode()***  
-  
-**hashCode() {**  
+**hashCode() { **  
 int result = 1;  
 result = prime*result+((element == null)? 0:element.hashCode());  
 return result;  
-**}**  
+}**  
 
 # Set random numbers
-**class Random**  
-   *Random random = new Random();*  
-   *random.nextInt(bound);*  
-  
+
+**class Random  
+Random random = new Random();  
+random.nextInt(bound);**  
+# File
+**Traverse subfolder by FOREACH and RECURSION**  
+
+# I/O
+*try-with-recource: AotoCloseable  
+if BufferI/OStream close(), must flush()*  
+
+***byteStream***  
+
+**InputStream  
+FileInputStream  
+ObjectInputStream  
+BufferedInputStream extends FilterInputStream  
+DataInputStream extends FilterInputStream**  
+
+**OutputStream  
+FileOutputStream  
+ObjectOutputStream  
+BufferedOutputStream extends FilterOutputStream  
+DataOutputStream extends FilterOutputStream**  
+
+***charStream***  
+
+**Reader:
+BufferedReader  
+FileReader extends InputStreamReader**  
+
+**Writer:  
+BufferedWriter  
+FileWriter  extends OutputStreamWriter**  
+
+
+
