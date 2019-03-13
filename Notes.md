@@ -128,7 +128,8 @@ random.nextInt(bound);**
 
 # I/O
 *try-with-recource: AotoCloseable  
-if BufferI/OStream close(), must flush()*  
+if BufferI/OStream close(), must flush()  
+BufferedStream must creat After a stream*  
 
 ***byteStream***  
 
