@@ -53,15 +53,17 @@ Math.random();**  *//get 0~1 random double float*
 ***List***  
 *sort by Collections.sort(list);*  
 
-**ArrayList**  
- 
-**sequential  
-fast iterator, slow add remove replace**  
- 
-**LinkList**  
+**ArrayList  
+*sequential  
+sequential stracture:  
+faster check  
+slower add, replace and remove***  
 
-**sequential  
-fast add remove replace, slow iterator**  
+**LinkList  
+*sequential  
+link structure:  
+fast add, replace and remove  
+slower check***  
 
 ***Set***  
 
@@ -135,25 +137,26 @@ BufferedStream must creat After a stream*
 
 **InputStream  
 FileInputStream  
-ObjectInputStream  
+ObjectInputStream(deserialize)  
 BufferedInputStream extends FilterInputStream  
-DataInputStream extends FilterInputStream**  
+DataInputStream(can only read file created by DataOutputStream) extends FilterInputStream**  
 
 **OutputStream  
 FileOutputStream  
-ObjectOutputStream  
+ObjectOutputStream(Serialize: Public ObjectAttribute)  
 BufferedOutputStream extends FilterOutputStream  
-DataOutputStream extends FilterOutputStream**  
+DataOutputStream extends FilterOutputStream  
+PrintStream**  
 
 ***charStream***  
 
-**Reader:
-BufferedReader  
-FileReader extends InputStreamReader**  
+**Reader:  
+FileReader extends InputStreamReader  
+BufferedReader  *//Incrase peformance***  
 
 **Writer:  
-BufferedWriter  
-FileWriter  extends OutputStreamWriter**  
-
-
-
+BufferedWriter  *//Incrase performance*  
+FileWriter  extends OutputStreamWriter  
+PrintWriter:  *//Recommended*  
+PrintWirter writer = new PrintWirter(new BufferWirter(new FileWriter("Path"，(true to start Auto flush))));  
+writer.println();  *//Auto LF,Auto flush*  
