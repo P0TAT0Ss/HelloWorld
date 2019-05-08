@@ -1,0 +1,19 @@
+<component name="ProjectCodeStyleConfiguration">
+  <code_scheme name="Project" version="173">
+    <codeStyleSettings language="Groovy">
+      <option name="ALIGN_MULTILINE_ASSIGNMENT" value="true" />
+      <option name="ALIGN_GROUP_FIELD_DECLARATIONS" value="true" />
+      <option name="KEEP_SIMPLE_BLOCKS_IN_ONE_LINE" value="true" />
+      <option name="KEEP_MULTIPLE_EXPRESSIONS_IN_ONE_LINE" value="true" />
+    </codeStyleSettings>
+    <codeStyleSettings language="JAVA">
+      <option name="ALIGN_GROUP_FIELD_DECLARATIONS" value="true" />
+      <option name="KEEP_SIMPLE_BLOCKS_IN_ONE_LINE" value="true" />
+      <option name="KEEP_SIMPLE_METHODS_IN_ONE_LINE" value="true" />
+      <option name="KEEP_SIMPLE_LAMBDAS_IN_ONE_LINE" value="true" />
+      <option name="KEEP_SIMPLE_CLASSES_IN_ONE_LINE" value="true" />
+      <option name="KEEP_MULTIPLE_EXPRESSIONS_IN_ONE_LINE" value="true" />
+      <option name="WRAP_LONG_LINES" value="true" />
+    </codeStyleSettings>
+  </code_scheme>
+</component>

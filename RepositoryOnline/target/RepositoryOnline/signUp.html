@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    #container {
+        min-height: 100%;
+        height: auto !important;
+        margin: 0 auto -25px;
+    }
+
+    #body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    #header {
+        width: 100%;
+        font-size: xx-large;
+        background-color: seagreen;
+        border-bottom-right-radius: 50px;
+        color: honeydew;
+        position: fixed;
+    }
+
+    #page {
+        padding-bottom: 25px;
+    }
+
+    #footer {
+        position: fixed;
+        text-align: center;
+        background-color: seagreen;
+        width: 100%;
+        bottom: 0;
+        height: 25px;
+        font-size: 20px;
+        clear: both;
+    }
+
+    .inputBox {
+        width: 50%;
+        border-radius: 50px;
+        padding: 50px 10px 20px 10px;
+        margin: auto;
+        background-color: whitesmoke;
+    }
+
+    .inputType {
+        text-align: center;
+        font-size: x-large;
+        width: 80%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: whitesmoke;
+    }
+
+    #submit {
+        border-radius: 50px;
+        margin: auto;
+        padding: 15px 15px;
+        width: 70%;
+        background-color: seagreen;
+        font-size: xx-large;
+    }
+
+    #welcome {
+        font-size: 30px;
+        text-align: center;
+        background-color: whitesmoke;
+        border-bottom-left-radius: 200%;
+        border-bottom-right-radius: 200%;
+        border-color: seagreen;
+        margin: 10px 80px 10px 80px;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up</title>
+</head>
+<div id="container">
+    <div id="page">
+        <div id="header">iRepository.com</div>
+    </div>
+</div>
+<body id="body">
+<div id="welcome">
+    <h2>SIGN UP</h2>
+    <h4>Getting start with your first repository</h4>
+</div>
+<h3 class="inputBox" align="center">
+    <form action="signUp" method="post">
+
+        <label for="username"></label>
+        <input class="inputType"  type="text" id="username" name="username" placeholder="your username" required/>
+        <br/>
+        <br/>
+        <label for="password"></label>
+        <input class="inputType" type="password" id="password" name="password" placeholder="your password" required/>
+        <br/>
+        <br/>
+        <input id="submit" type="submit" value="SIGN UP"/>
+    </form>
+
+</h3>
+
+</body>
+
+<div id="footer">
+    COPYRIGHT?iRepository.com | TEL:15102900171
+</div>
+</html>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <!--Load properties resource-->
+    <properties resource="mysql-config.properties"/>
+
+    <!--Definite aliases-->
+    <typeAliases>
+        <!--
+         | Definite only one
+         |-->
+        <!--<aliasType type="per.han.DAO.VO.valueObj" alias="valueObj"/>-->
+
+        <!--
+         |Batch definite aliases
+         |-->
+        <package name="per.han.repository.VO"/>
+
+    </typeAliases>
+
+    <!--Remove while using SSM-->
+    <environments default="development">
+        <environment id="development">
+
+            <!--All controlled by mybatis-->
+            <transactionManager type="JDBC"/>
+            <!--Database connection pool-->
+            <dataSource type="POOLED">
+                <!--Remove "\"-->
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--Load mapping fileMapper-->
+    <!--<mappers>-->
+
+        <!--&lt;!&ndash;-->
+         <!--| Load one mapper.xml fileMapper-->
+         <!--|&ndash;&gt;-->
+        <!--&lt;!&ndash;<mapper resource="mapper/valueObj.xml">&ndash;&gt;-->
+
+        <!--&lt;!&ndash;-->
+         <!--| Batch load mapper fileMapper-->
+         <!--|&ndash;&gt;-->
+        <!--&lt;!&ndash;<package name="per.han.repository.mapper"/>&ndash;&gt;-->
+
+    <!--</mappers>-->
+
+</configuration>
