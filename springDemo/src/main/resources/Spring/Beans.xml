@@ -3,7 +3,8 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean>
-
+    <bean id="User" class="per.han.PO.User">
+        <property name="username" value="P0TAT0Ss"/>
+        <property name="password" value="hanlinjue.0912"/>
     </bean>
 </beans>
