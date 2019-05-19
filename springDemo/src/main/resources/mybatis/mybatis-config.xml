@@ -17,7 +17,7 @@
         <!--
          |Batch definite aliases
          |-->
-        <package name="per.han.DB.POJO"/>
+        <package name="per.han.Entity"/>
 
     </typeAliases>
 
@@ -42,14 +42,14 @@
     <!--<mappers>-->
 
     <!--
-     | Load one mapper.xml file
+     | Load one DAO.xml file
      |-->
-    <!--<mapper resource="mapper/valueObj.xml">-->
+    <!--<DAO resource="DAO/valueObj.xml">-->
 
     <!--
-     | Batch load mapper file
+     | Batch load DAO file
      |-->
-    <!--<package name=".mapper"/>-->
+    <!--<package name=".DAO"/>-->
 
     <!--</mappers>-->
 

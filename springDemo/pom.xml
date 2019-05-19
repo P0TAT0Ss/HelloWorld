@@ -108,7 +108,7 @@
             <artifactId>YBOpenApi</artifactId>
             <version>1.0</version>
             <scope>system</scope>
-            <systemPath>D:/Install/Maven/apache-maven-3.6.0/repositive/YBOpen/1.0/YBOpenApi-1.0.jar</systemPath>
+            <systemPath>D:/Install/Maven/apache-maven-3.6.0/repository/YBOpen/1.0/YBOpenApi-1.0.jar</systemPath>
         </dependency>
     </dependencies>
 
