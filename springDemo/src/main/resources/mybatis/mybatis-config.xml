@@ -39,7 +39,7 @@
     <!--</environments>-->
 
     <!--Load mapping file-->
-    <!--<mappers>-->
+    <!--<mapper>-->
 
     <!--
      | Load one DAO.xml file
@@ -51,6 +51,6 @@
      |-->
     <!--<package name=".DAO"/>-->
 
-    <!--</mappers>-->
+    <!--</mapper>-->
 
 </configuration>

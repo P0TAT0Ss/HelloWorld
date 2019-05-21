@@ -44,7 +44,7 @@ public class SpringMybatisConfig {
         ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
         SqlSessionFactoryBean sessionFactoryBean = new SqlSessionFactoryBean();
         sessionFactoryBean.setDataSource(dataSource());
-        sessionFactoryBean.setMapperLocations(resolver.getResources("mappers/*.xml"));
+        sessionFactoryBean.setMapperLocations(resolver.getResources("mapper/*.xml"));
         return sessionFactoryBean;
     }
 
