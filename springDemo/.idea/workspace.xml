@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="de3406e3-96d6-43b8-a47c-94a8f32eee5d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/demo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DAO/.idea/dataSources/f4d401ae-ce03-4217-b0c0-5b5eb51578eb.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DAO/.idea/dataSources/f4d401ae-ce03-4217-b0c0-5b5eb51578eb/storage_v2/_src_/schema/directions.1OhgDQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DAO/.idea/dataSources/f4d401ae-ce03-4217-b0c0-5b5eb51578eb/storage_v2/_src_/schema/students.mMXRbw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../DAO/DAO.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -265,8 +267,8 @@
   <component name="MavenRunner">
     <option name="jreName" value="1.8" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="950" />
     <option name="width" value="980" />
     <option name="height" value="1050" />
   </component>
@@ -617,6 +619,7 @@
       <workItem from="1559030513578" duration="459000" />
       <workItem from="1559030995729" duration="1984000" />
       <workItem from="1559220322133" duration="3639000" />
+      <workItem from="1559809627986" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="some changes">
       <created>1557657002420</created>
@@ -661,7 +664,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="123449000" />
+    <option name="totallyTimeSpent" value="124048000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -673,9 +676,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="848" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="848" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19530201" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19798657" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Designer" order="3" />
@@ -696,6 +700,7 @@
       <window_info anchor="bottom" id="Messages" order="13" weight="0.3280116" />
       <window_info anchor="bottom" id="Java Enterprise" order="14" weight="0.3280116" />
       <window_info anchor="bottom" id="CSS Styles" order="15" weight="0.32896653" />
+      <window_info anchor="right" id="BPMNPalette" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.24861111" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -911,6 +916,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/config/SpringConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -918,13 +930,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
         </state>
       </provider>
     </entry>
