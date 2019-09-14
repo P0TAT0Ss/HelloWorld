@@ -11,10 +11,12 @@ import java.io.IOException;
 
 @WebServlet(name = "iRepository")
 public class iRepository extends HttpServlet {
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
     response.setContentType("text/html");
     }
 
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         HttpSession httpSession = request.getSession();
         String sessionUsername = (String)httpSession.getAttribute("username");

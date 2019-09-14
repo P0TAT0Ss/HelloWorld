@@ -15,6 +15,7 @@ import java.util.List;
 
 @WebServlet(name = "SearchAll")
 public class SearchAll extends HttpServlet {
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         response.setContentType("text/html");
         String fileName = request.getParameter("searchAll");

@@ -45,4 +45,13 @@
         <servlet-name>SearchAll</servlet-name>
         <url-pattern>/SearchAll</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>upload</servlet-name>
+        <servlet-class>servlet.upload</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>upload</servlet-name>
+        <url-pattern>/upload</url-pattern>
+    </servlet-mapping>
 </web-app>
