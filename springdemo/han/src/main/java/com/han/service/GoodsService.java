@@ -1,4 +1,7 @@
 package com.han.service;
 
-public class GoodsService {
+/**
+ * @author Jue-PC
+ */
+public interface GoodsService {
 }

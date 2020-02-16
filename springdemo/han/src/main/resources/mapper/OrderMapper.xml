@@ -3,4 +3,16 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.han.dao">
+    <insert id="addOrder" parameterType="CommonOrder">
+        insert into order_common(usr_id, good_id, merchant_name, good_name, good_num, good_price)
+        VALUES
+        <foreach collection="list" item="item" index="index" open="(" close=")" separator=",">
+            (#{usr_id}, #{good_id}, (select usr_id from goods where good_id = #{good_id}),)
+        </foreach>
+    </insert>
+    <select id="findCommonOrder" resultType="CommonOrder">
+        select merchant_name, good_name, good_num, good_price
+        from order_common
+        where usr_id = #{usr_id}
+    </select>
 </mapper>

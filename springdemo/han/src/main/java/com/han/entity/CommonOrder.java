@@ -1,19 +1,22 @@
 package com.han.entity;
 
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
 /**
  * @author Jue-PC
  */
-public class Order {
-    id
-            order_id
-    good_name
-            good_num
-    good_price
-            create_at
-    id
-            usr_name
-    good_name
-            usr_address
-    phone
-            price
+@Getter
+@Setter
+@ToString
+public class CommonOrder {
+    private int    id;
+    private int    usr_id;
+    private int    good_id;
+    private int    good_num;
+    private String merchant_name;
+    private String good_name;
+    private double good_price;
+    private String statue;
 }

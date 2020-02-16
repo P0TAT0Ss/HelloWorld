@@ -1,4 +1,4 @@
-package com.han.mapper;
+package com.han.dao;
 
 public interface CarMapper {
 }

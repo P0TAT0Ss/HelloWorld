@@ -1,4 +1,7 @@
 package com.han.service;
 
-public class CarService {
+/**
+ * @author Jue-PC
+ */
+public interface CarService {
 }
