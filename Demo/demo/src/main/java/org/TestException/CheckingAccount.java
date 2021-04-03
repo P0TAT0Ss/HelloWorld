@@ -1,5 +1,8 @@
-package pers.han.TestException;
+package org.TestException;
 
+/**
+ * @author OS
+ */
 public class CheckingAccount extends Account {
 
     private double overdraftProtection;
@@ -19,13 +22,13 @@ public class CheckingAccount extends Account {
 
     public static void main(String[] args) {
 
-        CheckingAccount CA = new CheckingAccount();
-        CA.deposit();
+        CheckingAccount checkAccount = new CheckingAccount();
+        checkAccount.deposit();
         try {
-            CA.withdraw();
+            checkAccount.withdraw();
         } catch (DeficitException e) {
-            CA.setOverdraftProtection(e.getDeficit());
-            System.out.println("You should repay: "+ CA.getOverdraftProtection());
+            checkAccount.setOverdraftProtection(e.getDeficit());
+            System.out.println("You should repay: "+ checkAccount.getOverdraftProtection());
         }
 
 

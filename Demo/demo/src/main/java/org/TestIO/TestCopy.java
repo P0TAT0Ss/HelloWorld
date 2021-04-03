@@ -1,4 +1,4 @@
-package pers.han.TestIO;
+package org.TestIO;
 
 /**
  * Copy allFile include files of subFolder to new folder
@@ -6,9 +6,12 @@ package pers.han.TestIO;
 
 import java.io.*;
 
-public class testCopy {
+/**
+ * @author OS
+ */
+public class TestCopy {
 
-    public testCopy() {
+    public TestCopy() {
 
     }
 
@@ -53,7 +56,7 @@ public class testCopy {
 
     public static void main(String[] args) {
 
-        testCopy test = new testCopy();
+        TestCopy test = new TestCopy();
         test.copyFile("F:/folder");
 
 

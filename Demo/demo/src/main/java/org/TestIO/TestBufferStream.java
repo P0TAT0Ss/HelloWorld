@@ -1,11 +1,14 @@
-package pers.han.TestIO;
+package org.TestIO;
 
 import java.io.*;
 
-public class testBufferStream {
+/**
+ * @author OS
+ */
+public class TestBufferStream {
 
 
-    testBufferStream() {
+    TestBufferStream() {
 
     }
 
@@ -38,7 +41,7 @@ public class testBufferStream {
 
     public static void main(String[] args) {
 
-        testBufferStream testBufferStream = new testBufferStream();
+        TestBufferStream testBufferStream = new TestBufferStream();
         testBufferStream.removeAnnotation("F:/File.txt","F:/newFile.txt");
 
     }

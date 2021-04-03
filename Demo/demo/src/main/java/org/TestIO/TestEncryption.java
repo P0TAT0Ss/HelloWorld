@@ -1,4 +1,4 @@
-package pers.han.TestIO;
+package org.TestIO;
 /**
  * testEncryption number and upperLetters and lowerLetters
  */
@@ -7,7 +7,10 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class testEncryption {
+/**
+ * @author OS
+ */
+public class TestEncryption {
 
     List<Character> num;
     List<Character> upperChar;
@@ -21,7 +24,7 @@ public class testEncryption {
     char[] upperLetter;
     char[] numbers;
 
-    testEncryption() {
+    TestEncryption() {
 
         upperLetter = Str.toCharArray();
         lowerLetter = str.toCharArray();
@@ -151,7 +154,7 @@ public class testEncryption {
 
     public static void main(String[] args) {
 
-        testEncryption encryption = new testEncryption();
+        TestEncryption encryption = new TestEncryption();
         encryption.fileEncryption("F:/File.txt","F:/encryptedFile.txt");
         encryption.fileDecryption("F:/encryptedFile.txt","F:/decryptedFile.txt");
 

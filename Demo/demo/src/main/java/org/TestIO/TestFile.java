@@ -1,4 +1,4 @@
-package pers.han.TestIO;
+package org.TestIO;
 /**
  * Traverse files include subFolder files
  * Sort all files by size
@@ -9,7 +9,10 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
-public class testFile {
+/**
+ * @author OS
+ */
+public class TestFile {
 
     File file;
     File[] files;
@@ -19,7 +22,7 @@ public class testFile {
     String maxName;
     String minName;
 
-    testFile() {
+    TestFile() {
 
         Max = 0;
         Min = Integer.MAX_VALUE;
@@ -105,7 +108,7 @@ public class testFile {
 
     public static void main(String[] args) {
 
-        testFile test = new testFile();
+        TestFile test = new TestFile();
 
         test.traverseFiles("F:/WYYYY/CloudMusic");
         test.sortFile();

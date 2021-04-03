@@ -1,12 +1,15 @@
-package pers.han.TestIO;
+package org.TestIO;
 
 import java.io.*;
 
-public class testSerialize {
+/**
+ * @author OS
+ */
+public class TestSerialize {
 
     public void serialize(String fileName) {
 
-        serializeObject sObj = new serializeObject(
+        SerializeObject sObj = new SerializeObject(
                 "man","Jue",20,175,75);
 
         File file = new File(fileName);
@@ -31,7 +34,7 @@ public class testSerialize {
                         new ObjectInputStream(new BufferedInputStream(new FileInputStream(file)))
         ) {
 
-            serializeObject obj = (serializeObject)ObjInput.readObject();
+            SerializeObject obj = (SerializeObject)ObjInput.readObject();
 
         }catch (ClassNotFoundException e) {
             e.printStackTrace();
@@ -43,7 +46,7 @@ public class testSerialize {
 
     public static void main(String[] args) {
 
-        testSerialize test = new testSerialize();
+        TestSerialize test = new TestSerialize();
         test.serialize("serializedFile.obj");
         test.deSerialize("serializedFile.obj");
 

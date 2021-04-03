@@ -7,11 +7,11 @@ import java.util.Queue;
 /**
  * @author Jue-PC
  */
-public class testQueue {
+public class TestQueue {
 
     private List<Integer> fifo;
 
-    public testQueue() {
+    public TestQueue() {
         fifo = new LinkedList<>();
     }
 
@@ -37,7 +37,7 @@ public class testQueue {
     }
 
     public static void main(String[] args) {
-        testQueue test = new testQueue();
+        TestQueue test = new TestQueue();
         test.Stack();
     }
 

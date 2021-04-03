@@ -1,4 +1,4 @@
-package pers.han.TestIO;
+package org.TestIO;
 
 /**
  * Split file and combine file parts
@@ -8,11 +8,14 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class testFileStream {
+/**
+ * @author OS
+ */
+public class TestFileStream {
 
     List<File> subFiles;
 
-    testFileStream() {
+    TestFileStream() {
         subFiles = new ArrayList<>();
     }
 
@@ -39,7 +42,7 @@ public class testFileStream {
          */
         try(FileInputStream input = new FileInputStream(file)) {
             //  Determine file not split yet
-            if (!(subFiles.size() > 0)) {
+            if (subFiles.size() <= 0) {
                 while (true) {
                     byte[] buff = new byte[((int)file.length())/partNum];
                     /**
@@ -75,7 +78,7 @@ public class testFileStream {
                     for (File SubFile: subFiles) {
                         //  Set bytesSize
                         byte[] bytes = new byte[(int) SubFile.length()];
-                        //  Creat file of each filePart
+                        //  Create file of each filePart
                         File filePart = new File(SubFile.getPath());
 
                         /**
@@ -101,7 +104,7 @@ public class testFileStream {
 
     public static void main(String[] args) {
 
-        testFileStream test = new testFileStream();
+        TestFileStream test = new TestFileStream();
         for (int i = 0;i<2;i++) {
             test.fileSplitCombine("F:/oopxxx.png",5,
                     "F:/", "newFile",

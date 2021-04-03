@@ -1,7 +1,10 @@
-package pers.han.TestException;
+package org.TestException;
 
 import java.util.Scanner;
 
+/**
+ * @author OS
+ */
 public class Account {
 
     private double balance;

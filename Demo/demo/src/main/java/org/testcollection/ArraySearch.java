@@ -6,7 +6,6 @@ package org.testcollection;
 public class ArraySearch {
 
     public boolean find(int target, int[][] array) {
-
         return false;
     }
 

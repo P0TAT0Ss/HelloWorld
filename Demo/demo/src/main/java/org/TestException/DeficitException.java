@@ -1,5 +1,8 @@
-package pers.han.TestException;
+package org.TestException;
 
+/**
+ * @author OS
+ */
 public class DeficitException extends Exception {
 
     private double deficit;
